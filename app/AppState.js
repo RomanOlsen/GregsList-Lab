@@ -1,4 +1,4 @@
-import { Car } from './models/Car.js'
+import { Car, CreditCard } from './models/Car.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -53,7 +53,83 @@ class ObservableAppState extends EventEmitter {
       color: 'yellow',
       imgUrl: 'https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/02q4/267343/subaru-baja-photo-9829-s-original.jpg?fill=1:1&resize=1200:*'
     }),
+    new Car({
+      make: 'audi',
+      model: 'r8',
+      year: 2012,
+      price: 160000,
+      mileage: 9000,
+      hasCleanTitle: true,
+      engineType: 'V10',
+      isManualTransmission: true,
+      color: 'white',
+      imgUrl: 'https://www.thedrive.com/wp-content/uploads/images-by-url-td/content/archive-images/critics-notebook-audi-r8-bb-hero.jpg?quality=85'
+    }),
   ]
+
+  creditCards = [
+    new CreditCard({
+      id: 0,
+      bank: 'Chase',
+      name: 'Freedom',
+      annualFee: 0,
+      creditScoreNeeded: 500,
+      cashbackGas: 1,
+      cashbackRestaurants: 2,
+      cashbackGroceries: 1,
+      cashbackAll: 1.5,
+      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+    }),
+    new CreditCard({
+      id: 0,
+      bank: 'Amex',
+      name: 'Gold',
+      annualFee: 350,
+      creditScoreNeeded: 700,
+      cashbackGas: 2,
+      cashbackRestaurants: 4,
+      cashbackGroceries: 4,
+      cashbackAll: 1,
+      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+    }),
+    new CreditCard({
+      id: 0,
+      bank: 'Amex',
+      name: 'Platinum',
+      annualFee: 665,
+      creditScoreNeeded: 770,
+      cashbackGas: 3,
+      cashbackRestaurants: 4,
+      cashbackGroceries: 5,
+      cashbackAll: 2,
+      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+    }),
+    new CreditCard({
+      id: 0,
+      bank: 'Amex',
+      name: 'Blue Cash',
+      annualFee: 0,
+      creditScoreNeeded: 690,
+      cashbackGas: 3,
+      cashbackRestaurants: 1,
+      cashbackGroceries: 3,
+      cashbackAll: 1,
+      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+    }),
+    new CreditCard({
+      id: 0,
+      bank: 'Citi',
+      name: 'Double Cash',
+      annualFee: 0,
+      creditScoreNeeded: 670,
+      cashbackGas: null,
+      cashbackRestaurants: null,
+      cashbackAll: 2,
+      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+    }),
+
+  ]
+
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
