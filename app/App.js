@@ -1,9 +1,9 @@
 import { CarsController } from "./controllers/CarsController.js"
-import { CreditCard } from "./models/CreditCard.js"
+import { CreditCardsController } from "./controllers/CreditCardsController.js"
 
 class App {
   carsController = new CarsController()
-  creditCardController = new CreditCard()
+  creditCardController = new CreditCardsController
 }
 
 window['app'] = new App()
