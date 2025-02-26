@@ -17,7 +17,7 @@ export class CreditCard {
 
   // get expects return
   get ccHTMLTemplate() {
-
+    return ``
   }
 
 

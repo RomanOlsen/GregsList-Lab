@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>gregslist</title>
+  <title>DebtsList</title>
 </head>
 
 <body data-bs-theme="light">
@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar bg-codeworks text-light gap-2 px-2">
       <img src="./assets/img/logo.png" height="45" alt="" loading="lazy">
-      <div><b>gregslist</b></div>
+      <div><b>DebtsList</b></div>
       <div class="ms-auto" id="authstate"></div>
       </div>
     </nav>
@@ -131,13 +131,79 @@
         </div> -->
       </div>
     </section>
+    <!-- SECTION Credit cards -->
+
+    <section class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <h2 class="fs-1 fw-bold">Credit Cards</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <div class="shadow card">
+            <div class="card-header bg-warning fs-2">List Your Credit Card</div>
+            <!-- NOTE you will need a button element inside of your form that we can use to submit the form -->
+            <div class="m-3">
+              <form onsubmit="">
+                <label for="bank">Bank</label>
+                <input id="bank" type="text" required>
+
+                <label for="bank">CC Product Name</label>
+                <input id="bank" type="text" required>
+
+                <label for="bank">Annual Fee</label>
+                <input id="bank" type="text" required>
+
+                <label for="bank">Credit Score Needed</label>
+                <input id="bank" type="number" min="300" max="850" required>
+
+                <label for="bank">Base Cashback Rate (Percentage)</label>
+                <input id="bank" type="number" required>
+
+                <label for="bank">Cashback Gas (Percentage)</label>
+                <input id="bank" type="number" required>
+
+                <label for="bank">Cashback Groceries (Percentage)</label>
+                <input id="bank" type="number" required>
+
+                <label for="bank">Cashback Restaurants (Percentage)</label>
+                <input id="bank" type="number" required>
+
+                <label for="bank">Image URL</label>
+                <input id="bank" type="number" required>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="text-end m-3">
+              <button class="btn btn-danger me-1" type="reset">
+                Reset Form
+              </button>
+              <button class="btn btn-primary text-light" type="submit">
+                Submit
+              </button>
+            </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="man paying with a CC" class="img-fluid">
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="text-bg-dark">
-    <div class="text-center">
-      <p class="mb-0"><small>Made with <i class="mdi mdi-heart text-pink"></i> by CodeWorks</small></p>
-    </div>
-  </footer>
 
   <!-- SECTION links for bootstrap, axios, and auth -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
