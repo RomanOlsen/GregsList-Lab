@@ -3,7 +3,7 @@ import { CreditCardsController } from "./controllers/CreditCardsController.js"
 
 class App {
   carsController = new CarsController()
-  creditCardController = new CreditCardsController
+  creditCardController = new CreditCardsController()
 }
 
 window['app'] = new App()

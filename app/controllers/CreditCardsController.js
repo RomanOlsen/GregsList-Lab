@@ -3,6 +3,8 @@ import { AppState } from "../AppState.js"
 export class CreditCardsController {
   constructor() {
     AppState.on('creditCards', this.drawCreditCards) //observer
+
+    this.drawCreditCards()
   }
 
   drawCreditCards() {

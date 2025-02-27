@@ -91,7 +91,7 @@ class ObservableAppState extends EventEmitter {
       cashbackRestaurants: 4,
       cashbackGroceries: 4,
       cashbackAll: 1,
-      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+      imgUrl: 'https://icm.aexp-static.com/acquisition/card-art/NUS000000174_480x304_straight_withname.png'
     }),
     new CreditCard({
       id: 0,
@@ -103,7 +103,7 @@ class ObservableAppState extends EventEmitter {
       cashbackRestaurants: 4,
       cashbackGroceries: 5,
       cashbackAll: 2,
-      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+      imgUrl: 'https://icm.aexp-static.com/acquisition/card-art/NUS000000237_480x304_straight_withname.png'
     }),
     new CreditCard({
       id: 0,
@@ -115,7 +115,7 @@ class ObservableAppState extends EventEmitter {
       cashbackRestaurants: 1,
       cashbackGroceries: 3,
       cashbackAll: 1,
-      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+      imgUrl: 'https://icm.aexp-static.com/acquisition/card-art/NUS000000305_480x304_straight_withname.png'
     }),
     new CreditCard({
       id: 0,
@@ -126,7 +126,7 @@ class ObservableAppState extends EventEmitter {
       cashbackGas: null,
       cashbackRestaurants: null,
       cashbackAll: 2,
-      imgUrl: 'https://creditcards.chase.com/content/dam/jpmc-marketplace/card-art/freedom_unlimited_card_alt.png'
+      imgUrl: 'https://www.zdnet.com/a/img/resize/cfdf7c70c4d93a1676a130eb74af7df554a7d994/2022/01/24/87c16967-7a4b-4c0d-9338-394fc02259ee/160913-gal-ccs-cash-citidouble.jpg?auto=webp&fit=crop&height=900&width=1200'
     }),
 
   ]
